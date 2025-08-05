@@ -1,0 +1,63 @@
+Qual a entrega de valor nessa US?
+Integrar o novo código do Blockchain para atender as necessidades do Detran do DF
+
+Qual problema precisamos resolver?
+A empresa GoLedger entregou Endpoints para consulta e geração das imagens em base 64 e a URL do contrato conforme o edital solicita
+
+Cenário Atual:
+Não existe esse recurso atualmente, ele terá que ser incluído
+
+Sugestão de Desenvolvimento:
+O eContrato deverá possuir funcionalidades para consultar e realizar o download do arquivo NFT (espécie de certificado gerado pela uso da tecnologia do Blockchain).
+
+Todos os registros realizados, independentemente de por qual canal o contrato entrar deverão possuir este documento.
+Vale lembrar que esta US trata apenas os registros enviados para o DF.
+
+Vamos disponibilizar uma nova sessão no espelho dos contratos chamado TOKENIZAÇÃO. Dentro deste botão teremos dois hiperlinks distintos:
+
+Exibir documento com token NFT
+Baixar documento com token NFT
+A tela deverá ficar mais ou menos assim, sendo importante observar que essa sessão deve ser a última exibida.
+
+imagem.png
+
+
+Vamos adicionar um campo com a informação explicativa de o que é NFT.
+Ao passar o mouse, o usuário deve ser informado conforme imagem abaixo: 
+Texto: 
+Este contrato foi registrado com tecnologia blockchain.
+Usando esta tecnologia garantimos que ele está registrado de forma segura, rastreável e imutável.
+Você pode visualizar o certificado digital ou baixar o documento autenticado.
+
+imagem (1).png
+
+Importante mencionar que APENAS CONTRATOS REGISTRADOS COM SUCESSO deverão possuir esta sessão (ou se apresentar, que seja exibida sem os links). 
+
+Quando o usuário clicar no link de exibição, um pop-up com o certificado deve ser exibido.
+Caso o usuário opte por baixar este documento, um arquivo .PDF deve ser apresentado.
+
+Modelo visual do arquivo e da tela:
+
+Image
+
+
+Logs:
+Não será necessário armazenar novos LOGs
+
+Documentação:
+Será necessário atualizar a documentação do produto.
+
+Review:
+Time de produtos. 
+
+Evolução da demanda:
+Possível que o time de produtos peça para expandir essa funcionalidade para outros estados da federação. Nesse caso novos cards serão abertos.
+Demanda para exibir a mesma funcionalidade no Backoffice
+
+Critérios de aceite 
+
+Garantir que apenas os contratos do DF que estejam registrados com sucesso tenham os links para exibição e download do NFT
+Garantir que o campo com informação esteja exibido no tooltip, e que ao passar o mouse sobre ele a mensagem presente no card seja mostrada
+Garantir a integridade dos dados apresentados na tela do NFT
+Garantir que a identidade visual da tela do NFT esteja correta
+Garantir que o Donwload funcione adequadamente e que o layout do arquivo esteja correto
